@@ -11,6 +11,11 @@ nav {
     align-items: center;
   }
   
+  .nav-links:hover{
+    color:#1DB954;
+      cursor: point;
+  }
+
 .spotify-logo {
   width: 132px;
   height: 41.88px;
@@ -203,6 +208,11 @@ section {
       color:#1DB954;
       cursor: point;
   }
+
+  .bottom-links:hover{
+    color:#1DB954;
+      cursor: point;
+  }
   .column > h1 {
     color: #919496;
     font-size: 13.5px;
@@ -244,6 +254,8 @@ section {
 
   .flag{
     width: 20px;
+    margin-left: 15px;
+    margin-right: 32.5px;
 }
 
 .copyright-push{
@@ -258,4 +270,5 @@ section {
   margin-right:auto;
   display: flex;
   align-items: center;
+  padding-left: 1.5rem;
 }
