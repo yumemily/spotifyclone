@@ -1,274 +1,261 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
 nav {
-    height: 60px;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    opacity: 0.8;
-    color: white;
-    display:flex;
-    align-items: center;
-  }
-  
-  .nav-links:hover{
-    color:#1DB954;
-      cursor: point;
-  }
+  height: 60px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+  color: white;
+}
+
+.nav-links:hover {
+  color: #1DB954;
+  cursor: pointer;
+}
 
 .spotify-logo {
   width: 132px;
   height: 41.88px;
+}
+
+.container {
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1320px;
+  flex: 1;
 }
 
 section {
-    height: 800px;
-    background-color: #f037a5;
-    background: linear-gradient(#f037a5 -60%, #fae62d 140%);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(-60%, #f037a5),
-      color-stop(140%, #fae62d)
-    );
-  }
-
-  .hero-img {
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
-    display: flex;
-    align-items: center;
-  }
-  nav > .container{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container {
-    /* height: 100%; */
-    display: flex;
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1170px;
-  }
-  .container > ul {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  ul > li {
-    list-style: none;
-    margin-right: 15px;
-  }
-  
-  ul > li > a {
-    text-decoration: none;
-    color: white;
-  }
-
-  #title {
-    color: white;
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 1.15;
-    text-align: center;
-    margin-bottom: 20px;
-    letter-spacing: -0.04em;
-  }
-
-  .btn-spotify {
-    border: 0px;
-    width: 260px;
-    color: white;
-    margin: 0 auto;
-    line-height: 1;
-    font-size: 14px;
-    margin-top: 16px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-radius: 500px;
-    padding: 18px 42px 18px;
-    background-color: #1db954;
-    text-transform: uppercase;
-    transition-duration: 0.3s;
-  }
-
-  .btn-spotify:hover {
-    cursor: pointer;
-    background-color: #1ed760;
-  }
-
-  /* This selector will make sure that the styling only applies to `.container` inside the `header`. */
-  section .container {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-  }
-
-  footer {
-    height: 400px;
-    background-color: black;
-    justify-content: center;
-  }
-
-  .column {
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .column:nth-child(1) {
-    background-color: black;
-  }
-  .column:nth-child(2) {
-    background-color: black;
-  }
-  .column:nth-child(3) {
-    background-color: black;
-  }
-  .column:nth-child(4) {
-    background-color:black;
-  }
-  .column:nth-child(5) {
-    background-color: black;
-  }
-
- 
-  .footer-logo{
-      flex: 1;
-      font-size: 13px;
-  }
-
-  .spotify-logo {
-    width: 200x;
-    height: 41.88px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .footer-icons {
-    flex: 3;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .footer-icons > .fab {
-    margin: 15px;
-  }
-
-  .fab {
-    font-size: 50px;
-  }
-  .footer-icons > .fab:hover {
-    color: #1DB954;
-  }
-
-  .footer {
-    display: flex;
-    padding: 20px;
-  }
-
-  body{
-      color: white;
-      margin: 0;
-      font-family: Arial;
-  }
-
-  .column > h1{
-    color: #919496;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 1.4;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-  }
-
-  .column > .footer-links{
-    display: flex;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-decoration: none;
-    color: white;
-    padding: 3px 0 15px;
-  }
-
-  .column > .footer-links:hover{
-      color:#1DB954;
-      cursor: point;
-  }
-
-  .bottom-links:hover{
-    color:#1DB954;
-      cursor: point;
-  }
-  .column > h1 {
-    color: #919496;
-    font-size: 13.5px;
-  }
-
-  .row{
-      display: flex;
-  }
-
-  .bottom-links{
-      font-size: 12px;
-      text-decoration: none;
-      color: #919496;
-      padding: 10px;
-  }
-
-  .bottom-text{
-    font-size: 10px;
-    text-decoration: none;
-    color: #919496;
-  }
-
-
-  .container-two, .container-three {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-
-  .container-two, .container-three{
-     color: grey;
-     font-size: 12px;
-  }
-
-  .container-two{
-      justify-content: flex-end;
-  }
-
-  .flag{
-    width: 20px;
-    margin-left: 15px;
-    margin-right: 32.5px;
+  height: 100%;
+  background-color: #f037a5;
+  background: linear-gradient(#f037a5 -60%, #fae62d 140%);
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(-60%, #f037a5), color-stop(140%, #fae62d));
 }
 
-.copyright-push{
-  display:-webkit-flex;
-  display:flex;
-  list-style-type:none;
-  padding-right:2rem;
-  justify-content:flex-end;
+.hero-img {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
 }
 
-.copyright-box{
-  margin-right:auto;
+nav>.container {
+  flex: 1;
   display: flex;
   align-items: center;
-  padding-left: 1.5rem;
+}
+
+.container>ul {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul>li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+#title {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+}
+
+.btn-spotify {
+  border: 0px;
+  width: 260px;
+  color: white;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 500px;
+  padding: 18px 42px 18px;
+  background-color: #1db954;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.btn-spotify:hover {
+  cursor: pointer;
+  background-color: #1ed760;
+}
+
+/* This selector will make sure that the styling only applies to `.container` inside the `header`. */
+
+section .container {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  flex-shrink: 0;
+}
+
+.column {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.footer-logo {
+  flex: 1;
+  font-size: 13px;
+}
+
+.spotify-logo {
+  width: 200x;
+  height: 41.88px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-icons {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-icons>.fab {
+  margin: 15px;
+}
+
+.fab {
+  font-size: 50px;
+}
+
+.footer-icons>.fab:hover {
+  color: #1DB954;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.f-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-1 {
+  display: flex;
+  width: 100%;
+}
+
+.column>h1 {
+  color: #919496;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.column>.footer-links {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  color: white;
+  padding: 3px 0 15px;
+}
+
+.column>.footer-links:hover {
+  color: #1DB954;
+  cursor: point;
+}
+
+.bottom-links:hover {
+  color: #1DB954;
+  cursor: point;
+}
+
+.column>h1 {
+  color: #919496;
+  font-size: 13.5px;
+}
+
+.row-2, .row-3 {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 12px;
+  color: grey;
+  width: 100%;
+}
+
+.row-2 {
+  justify-content: flex-end;
+}
+
+.flag {
+  width: 20px;
+  margin-left: 15px;
+}
+
+.copyright-links>a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #919496;
+  padding: 10px;
+}
+
+.copyright-links {
+  display: flex;
+}
+
+.copyright-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  .row-2, .row-3 {
+    display: none;
+  }
+  .footer-icons {
+    display: none;
+  }
 }
